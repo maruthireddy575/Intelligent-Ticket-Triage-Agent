@@ -1,0 +1,78 @@
+intelligent-ticket-triage-agent/
+│
+├── app.py                  # Main Streamlit application
+├── database.py             # SQLite database operations
+├── state_machine.py        # State machine implementation
+├── train_model.py          # ML model training script
+├── utils.py                # Utility functions (classification, risk, etc.)
+├── requirements.txt        # Python dependencies
+├── README.md               # Project documentation
+├── .gitignore              # Git ignore rules
+│
+├── models/                 # Trained model files (generated)
+│   ├── model.pkl
+│   └── vectorizer.pkl
+│
+├── data/                   # Dataset files
+│   └── sample_tickets.csv
+│
+├── assets/                 # Images and static files
+│
+└── docs/                   # Additional documentation
+
+
+Workflow
+
+┌─────────────────┐
+│  Local Project  │
+│   (Your PC)     │
+└────────┬────────┘
+         │
+         ▼
+┌─────────────────┐
+│  Prepare Files  │
+│  (.gitignore,   │
+│   README, etc.) │
+└────────┬────────┘
+         │
+         ▼
+┌─────────────────┐
+│   Git Init      │
+│  & Configure    │
+└────────┬────────┘
+         │
+         ▼
+┌─────────────────┐
+│  Stage Files    │
+│  (git add)      │
+└────────┬────────┘
+         │
+         ▼
+┌─────────────────┐
+│   Commit        │
+│  (git commit)   │
+└────────┬────────┘
+         │
+         ▼
+┌─────────────────┐
+│  Create GitHub  │
+│   Repository    │
+└────────┬────────┘
+         │
+         ▼
+┌─────────────────┐
+│  Connect Remote │
+│  (git remote)   │
+└────────┬────────┘
+         │
+         ▼
+┌─────────────────┐
+│  Push to GitHub │
+│  (git push)     │
+└────────┬────────┘
+         │
+         ▼
+┌─────────────────┐
+│   Verify &      │
+│   Enhance       │
+└─────────────────┘
